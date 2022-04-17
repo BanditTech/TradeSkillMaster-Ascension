@@ -58,27 +58,7 @@ function TSM:OnEnable()
 	-- fix vellum issue
 	for spellid, data in pairs(TSM.db.factionrealm.crafts) do
 		for itemString in pairs(data.mats) do
-			-- if itemString == "item:38682" then
-				-- TSM.db.factionrealm.crafts[spellid].mats["item:38682:0:0:0:0:0:0"] = 1
-			if itemString == "item:43146" then
-				TSM.db.factionrealm.crafts[spellid].mats["item:43146:0:0:0:0:0:0"] = 1
-				TSM.db.factionrealm.crafts[spellid].mats[itemString] = nil
-			elseif itemString == "item:43145" then
-				TSM.db.factionrealm.crafts[spellid].mats["item:43145:0:0:0:0:0:0"] = 1
-				TSM.db.factionrealm.crafts[spellid].mats[itemString] = nil
-			elseif itemString == "item:39350" then
-				TSM.db.factionrealm.crafts[spellid].mats["item:39350:0:0:0:0:0:0"] = 1
-				TSM.db.factionrealm.crafts[spellid].mats[itemString] = nil	
-			elseif itemString == "item:37602" then
-				TSM.db.factionrealm.crafts[spellid].mats["item:37602:0:0:0:0:0:0"] = 1
-				TSM.db.factionrealm.crafts[spellid].mats[itemString] = nil		
-			elseif itemString == "item:39349" then
-				TSM.db.factionrealm.crafts[spellid].mats["item:39349:0:0:0:0:0:0"] = 1
-				TSM.db.factionrealm.crafts[spellid].mats[itemString] = nil			
-			elseif itemString == "item:38682" then
-				TSM.db.factionrealm.crafts[spellid].mats["item:38682:0:0:0:0:0:0"] = 1
-				TSM.db.factionrealm.crafts[spellid].mats[itemString] = nil
-			elseif itemString == "item:52510" then
+			if itemString == "item:52510" then
 				TSM.db.factionrealm.crafts[spellid].mats["item:52510:0:0:0:0:0:0"] = 1
 				TSM.db.factionrealm.crafts[spellid].mats[itemString] = nil
 			elseif itemString == "item:52511" then
@@ -86,54 +66,6 @@ function TSM:OnEnable()
 				TSM.db.factionrealm.crafts[spellid].mats[itemString] = nil
 			end
 		end
-	end
-	-- if TSM.db.factionrealm.mats["item:38682"] then
-		-- local name = TSMAPI:GetSafeItemInfo("item:38682:0:0:0:0:0:0") or (GetLocale() == "enUS" and "Enchanting Vellum") or nil
-		-- TSM.db.factionrealm.mats["item:38682:0:0:0:0:0:0"] = {}
-		-- TSM.db.factionrealm.mats["item:38682:0:0:0:0:0:0"].name = name
-		-- TSM.db.factionrealm.mats["item:38682"] = nil
-	-- end
-	if TSM.db.factionrealm.mats["item:43146"] then
-		local name = TSMAPI:GetSafeItemInfo("item:43146:0:0:0:0:0:0") or nil
-		TSM.db.factionrealm.mats["item:43146:0:0:0:0:0:0"] = {}
-		TSM.db.factionrealm.mats["item:43146:0:0:0:0:0:0"].name = name
-		TSM.db.factionrealm.mats["item:43146"] = nil
-	end
-	if TSM.db.factionrealm.mats["item:43145"] then
-		local name = TSMAPI:GetSafeItemInfo("item:43145:0:0:0:0:0:0") or nil
-		TSM.db.factionrealm.mats["item:43145:0:0:0:0:0:0"] = {}
-		TSM.db.factionrealm.mats["item:43145:0:0:0:0:0:0"].name = name
-		TSM.db.factionrealm.mats["item:43145"] = nil
-	end
-	if TSM.db.factionrealm.mats["item:39350"] then
-		local name = TSMAPI:GetSafeItemInfo("item:39350:0:0:0:0:0:0") or nil
-		TSM.db.factionrealm.mats["item:39350:0:0:0:0:0:0"] = {}
-		TSM.db.factionrealm.mats["item:39350:0:0:0:0:0:0"].name = name
-		TSM.db.factionrealm.mats["item:39350"] = nil
-	end
-	if TSM.db.factionrealm.mats["item:39350"] then
-		local name = TSMAPI:GetSafeItemInfo("item:39350:0:0:0:0:0:0") or nil
-		TSM.db.factionrealm.mats["item:39350:0:0:0:0:0:0"] = {}
-		TSM.db.factionrealm.mats["item:39350:0:0:0:0:0:0"].name = name
-		TSM.db.factionrealm.mats["item:39350"] = nil
-	end
-	if TSM.db.factionrealm.mats["item:37602"] then
-		local name = TSMAPI:GetSafeItemInfo("item:37602:0:0:0:0:0:0") or nil
-		TSM.db.factionrealm.mats["item:37602:0:0:0:0:0:0"] = {}
-		TSM.db.factionrealm.mats["item:37602:0:0:0:0:0:0"].name = name
-		TSM.db.factionrealm.mats["item:37602"] = nil
-	end
-	if TSM.db.factionrealm.mats["item:39349"] then
-		local name = TSMAPI:GetSafeItemInfo("item:39349:0:0:0:0:0:0") or nil
-		TSM.db.factionrealm.mats["item:39349:0:0:0:0:0:0"] = {}
-		TSM.db.factionrealm.mats["item:39349:0:0:0:0:0:0"].name = name
-		TSM.db.factionrealm.mats["item:39349"] = nil
-	end
-	if TSM.db.factionrealm.mats["item:38682"] then
-		local name = TSMAPI:GetSafeItemInfo("item:38682:0:0:0:0:0:0") or nil
-		TSM.db.factionrealm.mats["item:38682:0:0:0:0:0:0"] = {}
-		TSM.db.factionrealm.mats["item:38682:0:0:0:0:0:0"].name = name
-		TSM.db.factionrealm.mats["item:38682"] = nil
 	end
 	if TSM.db.factionrealm.mats["item:52510"] then
 		local name = TSMAPI:GetSafeItemInfo("item:52510:0:0:0:0:0:0") or nil
@@ -256,33 +188,6 @@ function TSM:GetTooltip(itemString)
 						local name, _, quality = TSMAPI:GetSafeItemInfo(matItemString)
 						if name then
 							local mat = TSM.db.factionrealm.mats[matItemString]
-							
-							
-							
-							-- Get Cheapest vellum, lower vellum types can be replaced by III
-							local velName
-							if strfind(name, "Vellum") then
-								velName = name
-							end
-							if (velName ~= nil) and (not strfind(velName, "III")) then					
-								local VellumReplacePrice = TSM.Cost:GetMatCost(matItemString)
-
-								if strfind(velName, "Weapon") then						
-									if VellumReplacePrice > TSM.Cost:GetMatCost("item:52511:0:0:0:0:0:0") then 
-										matItemString = "item:52511:0:0:0:0:0:0"
-										name = TSMAPI:GetSafeItemInfo(matItemString)
-									end
-								else
-									if VellumReplacePrice > TSM.Cost:GetMatCost("item:52510:0:0:0:0:0:0") then 
-										matItemString = "item:52510:0:0:0:0:0:0"
-										name = TSMAPI:GetSafeItemInfo(matItemString)						
-									end
-								end
-							end
-							
-							
-				
-							
 							if mat then
 								local cost = TSM:GetCustomPrice(mat.customValue or TSM.db.global.defaultMatCostMethod, matItemString)
 								if cost then
