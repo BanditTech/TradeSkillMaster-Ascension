@@ -11,6 +11,8 @@ This is mostly just making sure the 'go to github' version is the most up to dat
 
 # [Download Link](https://github.com/BanditTech/TradeSkillMaster-Ascension/archive/refs/heads/master.zip)
 
+## [View Change Log](https://github.com/BanditTech/TradeSkillMaster-Ascension/commits/master)
+
 # If you are expericing lua errors and you were previously using another TSM port
 Other popular ports use different versions of TSM completely incompatible with this one.
 
