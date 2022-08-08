@@ -9,6 +9,8 @@ These modifications are specific to the [Project Ascension Private Server](https
 
 This is mostly just making sure the 'go to github' version is the most up to date and patched.
 
+# [Download Link](https://github.com/BanditTech/TradeSkillMaster-Ascension/archive/refs/heads/master.zip)
+
 # If you are expericing lua errors and you were previously using another TSM port
 Other popular ports use different versions of TSM completely incompatible with this one.
 
